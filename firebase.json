@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "cms-baghdad-new",
     "public": "dist",
     "ignore": [
       "firebase.json",
@@ -10,11 +9,14 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "index.html"
+        "destination": "/index.html"
       }
     ]
   },
   "database": {
     "rules": "database.rules.json"
+  },
+  "functions": {
+    "source": "functions"
   }
 }

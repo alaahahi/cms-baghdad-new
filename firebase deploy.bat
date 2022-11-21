@@ -1,1 +1,1 @@
-firebase deploy --only hostingcms-baghdad-new
+firebase deploy --only hosting cms-baghdad-new
