@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <HeaderNew />
   <div class="container">
   <UserCreateNew />
   </div>
@@ -9,10 +9,10 @@
 <script>
 import UserCreateNew from '@/components/UserCreateNew.vue'
 import UserListNew from '@/components/UserListNew.vue'
-import Header from '@/components/Header.vue'
+import HeaderNew from '@/components/HeaderNew.vue'
 
 export default {
   name: 'Home',
-  components: { UserCreateNew, UserListNew ,Header}
+  components: { UserCreateNew, UserListNew ,HeaderNew}
 }
 </script>
