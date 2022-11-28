@@ -13,6 +13,7 @@ const config = {
 const firebaseApp = firebase.initializeApp(config)
 
 const db = firebaseApp.firestore()
+
 const usersCollection = db.collection('users')
 
 export const createUser = user => {
@@ -39,4 +40,32 @@ export const useLoadUsers = () => {
   })
   onUnmounted(close)
   return users
+}
+
+const user1Collection = db.collection('user1')
+
+export const createUser1 = user => {
+  return user1Collection.add(user)
+}
+
+export const getUser1 = async id => {
+  const user = await user1Collection.doc(id).get()
+  return user.exists ? user.data() : null
+}
+
+export const updateUser1 = (id, user) => {
+  return user1Collection.doc(id).update(user)
+}
+
+export const deleteUser1 = id => {
+  return user1Collection.doc(id).delete()
+}
+
+export const useLoadUser1 = () => {
+  const user1 = ref([])
+  const close = user1Collection.onSnapshot(snapshot => {
+    user1.value = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))
+  })
+  onUnmounted(close)
+  return user1
 }
