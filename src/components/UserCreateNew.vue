@@ -1,6 +1,6 @@
 <template>
   <div class="card card-body mt-4">
-    <h2 class="text-center py-3">معلومات بطاقات مشفى  الأهلي</h2>
+    <h2 class="text-center py-3">معلومات بطاقات مشفى العالمي الأهلي</h2>
     <form @submit.prevent="onSubmit">
       <div class="form-group">
         <label>الاسم كامل</label>

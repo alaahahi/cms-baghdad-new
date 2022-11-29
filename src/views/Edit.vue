@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <Header1 />
   <div class="container">
   <div class="card card-body mt-4">
     <h2 class="text-center py-3">تعديل معلومات البطاقة</h2>
@@ -63,10 +63,10 @@
 import { reactive, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getUser, updateUser } from '@/firebase'
-import Header from '@/components/Header.vue'
+import Header1 from '@/components/Header1.vue'
 
 export default {
-  components: {  Header},
+  components: {  Header1},
   setup() {
     const router = useRouter()
     const route = useRoute()
