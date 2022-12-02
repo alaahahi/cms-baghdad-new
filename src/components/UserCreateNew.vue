@@ -36,6 +36,8 @@
           <option value="ابراهيم نافع">ابراهيم نافع</option>
           <option value="علاء نافع">علاء نافع</option>
           <option value="علي عبد الكريم">علي عبد الكريم</option>
+          <option value="ايلاف خالد">ايلاف خالد</option>
+                    <option value="اسماء عادل">اسماء عادل</option>
         </select>
       </div>
       <div class="form-group mt-3">
