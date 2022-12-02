@@ -12,7 +12,8 @@
     </div>
     
   </div>
-  
+  <h5 class="text-center pt-3" v-if="this.text">عدد النتائج  {{pageuser.length}}</h5>
+
 </div>
 </div>
   <div class="card m-4 " >

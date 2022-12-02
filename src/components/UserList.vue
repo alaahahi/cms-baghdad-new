@@ -11,9 +11,11 @@
       <input type="text"  v-model="text" class="form-control" placeholder="رقم البطاقة">
       <button class="btn btn-primary">بحث</button>
     </div>
+
+    
     
   </div>
-  
+  <h5 class="text-center pt-3" v-if="this.text">عدد النتائج  {{pageuser.length}}</h5>
 </div>
 </div>
 
