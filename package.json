@@ -15,8 +15,7 @@
     "firebase": "^9.14.0",
     "firebase-tools": "^11.16.1",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6",
-    "vuefire": "^3.0.0-alpha.13"
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.5.4",
