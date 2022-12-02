@@ -14,7 +14,7 @@
     
       </ul>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="رقم البطاقة" aria-label="Search">
+        <input class="form-control me-2" type="search"  placeholder="رقم البطاقة" aria-label="Search">
         <button class="btn btn-outline-success text-white" type="submit">بحث</button>
       </form>
     </div>

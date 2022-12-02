@@ -9,7 +9,7 @@
 
       <div class="form-group mt-3">
         <label>رقم البطاقة</label>
-        <input type="number" v-model="form.cardNumber" class="form-control" required />
+        <input type="text" v-model="form.cardNumber" class="form-control" required />
       </div>
 
       <div class="form-group mt-3">

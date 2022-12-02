@@ -2,7 +2,7 @@
   "name": "vue3-firebase",
   "version": "0.1.0",
   "private": true,
-  "author": "Justin Brooks <justin@datatorch.io>",
+  "author": "alaa hahi",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -16,7 +16,7 @@
     "firebase-tools": "^11.16.1",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6",
-    "vue3-pagination": "^1.0.16"
+    "vuefire": "^3.0.0-alpha.13"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.5.4",
