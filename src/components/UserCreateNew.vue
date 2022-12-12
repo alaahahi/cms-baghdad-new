@@ -31,13 +31,16 @@
       <div class="form-group mt-3">
         <label>المندوب</label>
         <select v-model="form.seller" class="form-select" aria-label="Default select example">
-          <option selected>يرجى الأختيار</option>
+          <option selected disabled>يرجى الأختيار</option>
           <option value="علي سفر">علي سفر</option>
           <option value="ابراهيم نافع">ابراهيم نافع</option>
           <option value="علاء نافع">علاء نافع</option>
           <option value="علي عبد الكريم">علي عبد الكريم</option>
           <option value="ايلاف خالد">ايلاف خالد</option>
-                    <option value="اسماء عادل">اسماء عادل</option>
+          <option value="اسماء عادل">اسماء عادل</option>
+          <option value="ضحى حسام">ضحى حسام</option>
+          <option value="علي شاكر">علي شاكر</option>
+          <option value="حسن حازم">حسن حازم</option>
         </select>
       </div>
       <div class="form-group mt-3">
