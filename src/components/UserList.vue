@@ -1,13 +1,6 @@
 
 <template>
 
-  <div id="app" ref="document">
- 
-      <center>
-x      </center>
-
-    <button @click="exportToPDF">Export to PDF</button>
-  </div>
 
 
 <div class="container mt-4">
@@ -30,7 +23,7 @@ x      </center>
 </div>
 
   <div class="card m-4 " >
-    <div id="element-to-convert">
+
     <div class="table-responsive">
     <table class="table m-0">
       <thead>
@@ -42,7 +35,7 @@ x      </center>
           <th scope="col">تاريخ التفعيل</th>
           <th scope="col">المندوب</th>
           <th scope="col">اسماء افراد العائلة</th>
-          <th scope="col">تنفيذ</th>
+          <th  class="action" scope="col">تنفيذ</th>
         </tr>
       </thead>
       <tbody>
@@ -54,7 +47,7 @@ x      </center>
           <td scope="col">{{startDate}}</td>
           <td scope="col">{{seller}}</td>
           <td scope="col">{{family}}</td>
-          <td>
+          <td class="action">
             <router-link :to="`/edit/${id}`">
               <button class="btn btn-primary btn-sm me-2">
                 Edit
@@ -77,14 +70,14 @@ x      </center>
     </div>
 
     </div>
-    </div>
+    
+
   </div>
 
 </template>
 
 <script>
 import { useLoadUsers, deleteUser } from '@/firebase'
-import html2pdf from "html2pdf.js";
 
 export default {
   data() {
@@ -99,12 +92,7 @@ export default {
       this.from = (page * 10) - 10
       this.to = page * 10
     },
-    exportToPDF() {
-      html2pdf(document.getElementById("element-to-convert"), {
-				margin: 1,
-  			filename: "i-was-html.pdf",
-			});
-    },
+
   },
   computed: {
     // a computed getter

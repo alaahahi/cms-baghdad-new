@@ -28,7 +28,7 @@
           <th scope="col">تاريخ التفعيل</th>
           <th scope="col">المندوب</th>
           <th scope="col">اسماء افراد العائلة</th>
-          <th scope="col">تنفيذ</th>
+          <th class="action" scope="col">تنفيذ</th>
         </tr>
       </thead>
       <tbody>
@@ -40,7 +40,7 @@
           <td scope="col">{{startDate}}</td>
           <td scope="col">{{seller}}</td>
           <td scope="col">{{family}}</td>
-          <td>
+          <td  class="action">
             <router-link :to="`/edit/${id}`">
               <button class="btn btn-primary btn-sm me-2">
                 Edit
