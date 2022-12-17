@@ -1,5 +1,15 @@
 
 <template>
+
+  <div id="app" ref="document">
+ 
+      <center>
+x      </center>
+
+    <button @click="exportToPDF">Export to PDF</button>
+  </div>
+
+
 <div class="container mt-4">
 
 <div class="row height d-flex justify-content-center align-items-center">
@@ -20,6 +30,7 @@
 </div>
 
   <div class="card m-4 " >
+    <div id="element-to-convert">
     <div class="table-responsive">
     <table class="table m-0">
       <thead>
@@ -65,12 +76,15 @@
     </nav>
     </div>
 
+    </div>
+    </div>
   </div>
-  </div>
+
 </template>
 
 <script>
 import { useLoadUsers, deleteUser } from '@/firebase'
+import html2pdf from "html2pdf.js";
 
 export default {
   data() {
@@ -84,7 +98,13 @@ export default {
     goToPage(page){
       this.from = (page * 10) - 10
       this.to = page * 10
-    }
+    },
+    exportToPDF() {
+      html2pdf(document.getElementById("element-to-convert"), {
+				margin: 1,
+  			filename: "i-was-html.pdf",
+			});
+    },
   },
   computed: {
     // a computed getter
