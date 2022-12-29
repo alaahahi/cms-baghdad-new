@@ -32,6 +32,10 @@
           <option value="حنين عقيل">حنين عقيل</option>
           <option value="احمد صبيح">احمد صبيح</option>
           <option value="محمد جاسم">محمد جاسم</option>
+          <option value="مينا رياض">مينا رياض</option>
+          <option value="عبد المهيمن ناظر">عبد المهيمن ناظر</option>
+          <option value="نبراس هادي">نبراس هادي</option>
+          
 
         </select>
       </div>
