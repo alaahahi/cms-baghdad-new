@@ -47,6 +47,7 @@
           <option value="مينا رياض">مينا رياض</option>
           <option value="عبد المهيمن ناظر">عبد المهيمن ناظر</option>
           <option value="نبراس هادي">نبراس هادي</option>
+          <option value="ثريا محمد">ثريا محمد</option>
         </select>
       </div>
       <div class="form-group mt-3">
