@@ -33,26 +33,18 @@
         <select v-model="form.seller" class="form-select" aria-label="Default select example">
           <option selected disabled>يرجى الأختيار</option>
           <option value="علي سفر">علي سفر</option>
-          <option value="ابراهيم نافع">ابراهيم نافع</option>
-          <option value="علاء نافع">علاء نافع</option>
-          <option value="علي عبد الكريم">علي عبد الكريم</option>
-          <option value="ايلاف خالد">ايلاف خالد</option>
-          <option value="اسماء عادل">اسماء عادل</option>
-          <option value="ضحى حسام">ضحى حسام</option>
-          <option value="علي شاكر">علي شاكر</option>
-          <option value="حسن حازم">حسن حازم</option>
-          <option value="حنين عقيل">حنين عقيل</option>
-          <option value="احمد صبيح">احمد صبيح</option>
           <option value="محمد جاسم">محمد جاسم</option>
           <option value="مينا رياض">مينا رياض</option>
           <option value="عبد المهيمن ناظر">عبد المهيمن ناظر</option>
-          <option value="نبراس هادي">نبراس هادي</option>
-          <option value="ثريا محمد">ثريا محمد</option>
+       
           <option value="مهند فؤاد">مهند فؤاد</option>
           <option value="علي احمد">علي احمد</option>
           <option value="محمد خطاب">محمد خطاب</option>
           <option value="احمد محمد">احمد محمد</option>
           <option value="ندى احمد">ندى احمد</option>
+
+          <option value="احمد صبحي">احمد صبحي</option>
+          <option value="حيدر سعد">حيدر سعد</option>
         </select>
       </div>
       <div class="form-group mt-3">
