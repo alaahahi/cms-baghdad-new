@@ -24,15 +24,19 @@
           <option value="محمد جاسم">محمد جاسم</option>
           <option value="مينا رياض">مينا رياض</option>
           <option value="عبد المهيمن ناظر">عبد المهيمن ناظر</option>
-       
           <option value="مهند فؤاد">مهند فؤاد</option>
           <option value="علي احمد">علي احمد</option>
           <option value="محمد خطاب">محمد خطاب</option>
           <option value="احمد محمد">احمد محمد</option>
           <option value="ندى احمد">ندى احمد</option>
-
           <option value="احمد صبحي">احمد صبحي</option>
           <option value="حيدر سعد">حيدر سعد</option>
+          <option value="وائل مكي">وائل مكي</option>
+          <option value="احمد المندلاوي">احمد المندلاوي</option>
+          <option value="يوسف حميد">يوسف حميد</option>
+          <option value="مصطفى احمد">مصطفى احمد</option>
+          <option value="علي اصيل">علي اصيل</option>
+          <option value="مصطفى قصي">مصطفى قصي</option>
         </select>
       </div>
   </div>
