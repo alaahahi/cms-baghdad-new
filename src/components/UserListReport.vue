@@ -38,6 +38,8 @@
           <option value="علي اصيل">علي اصيل</option>
           <option value="مصطفى قصي">مصطفى قصي</option>
           <option value="محمد جاسم علي">محمد جاسم علي</option>
+          <option value="ولاء كاظم">ولاء كاظم</option>
+          <option value="ايلاف ثائر">ايلاف ثائر</option> 
 
         </select>
       </div>
