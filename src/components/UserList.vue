@@ -61,12 +61,15 @@
       </tbody>
     </table>
 
-    <div class="m-3" v-if="!this.text">
-    <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-center">
-        <li  v-for="item in Math.ceil(users.length / 10)" :key="item"  class="page-item"><button  @click="() => goToPage(item)" class="page-link">{{item}}</button></li>
-      </ul>
-    </nav>
+    <div class="m-3 d-flex justify-content-center" v-if="!this.text">
+
+
+
+    <paginator :prevResults="prevResults" :nextResults="nextResults" :skip="skip" :item_per_page="item_per_page"
+          :count="users.length" :total="users.length"
+          @getMoreResults_from_child="getMoreResults_from_child">
+        </paginator>
+
     </div>
 
     </div>
@@ -78,19 +81,42 @@
 
 <script>
 import { useLoadUsers, deleteUser } from '@/firebase'
-
+import paginator from './paginator.vue'
 export default {
+  components: {
+    paginator,
+  },
   data() {
     return {
+      item_per_page: 10,
+      prevResults: 0,
+      nextResults: 10,
+      skip: 0,
+
       from:0,
       to:9,
       text:""
     }
   },
   methods:{
-    goToPage(page){
-      this.from = (page * 10) - 10
-      this.to = page * 10
+    getMoreResults_from_child(v) {
+      this.skip = this.skip + v
+      if (this.skip != 0) {
+        this.prevResults = this.item_per_page * -1
+      }
+      if (this.skip == 0) {
+        this.prevResults = 0
+      }
+      if (this.skip + this.item_per_page < this.resultsCount) {
+        this.max = false
+      }
+      if (this.skip + this.item_per_page >= this.resultsCount) {
+        this.max = true
+      }
+      this.pageuser
+    },
+    goto() {
+        window.scrollTo(0, top);
     },
 
   },
@@ -101,7 +127,7 @@ export default {
       //return this.users.slice(this.from,this.to)
       return   this.text
         ? this.users.filter((e) =>!e.name.toLowerCase().indexOf(this.text.toLowerCase()) || !e.cardNumber.indexOf(this.text)  || !e.seller.indexOf(this.text)  || !e.phone.indexOf(this.text))
-        :this.users.slice(this.from,this.to)
+        :this.users.slice(this.skip,this.skip+10)
     }
   },
   setup() {

@@ -53,13 +53,14 @@
         </tr>
       </tbody>
     </table>
-    <div class="m-3" v-if="!this.text">
-    <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-center">
-        <li  v-for="item in Math.ceil(user1.length / 10)" :key="item"  class="page-item"><button  @click="() => goToPage(item)" class="page-link">{{item}}</button></li>
-      </ul>
-    </nav>
+
+    <div class="m-3 d-flex justify-content-center" v-if="!this.text">
+        <paginator :prevResults="prevResults" :nextResults="nextResults" :skip="skip" :item_per_page="item_per_page"
+          :count="user1.length" :total="user1.length"
+          @getMoreResults_from_child="getMoreResults_from_child">
+        </paginator>
     </div>
+
 
 
   </div>
@@ -68,20 +69,45 @@
 
 <script>
 import { useLoadUser1, deleteUser1 } from '@/firebase'
+import paginator from './paginator.vue'
 
 export default {
+  components: {
+    paginator,
+  },
   data() {
     return {
+      item_per_page: 10,
+      prevResults: 0,
+      nextResults: 10,
+      skip: 0,
+
       from:0,
       to:9,
       text:""
     }
   },
   methods:{
-    goToPage(page){
-      this.from = (page * 10) - 10
-      this.to = page * 10
-    }
+    getMoreResults_from_child(v) {
+      this.skip = this.skip + v
+      if (this.skip != 0) {
+        this.prevResults = this.item_per_page * -1
+      }
+      if (this.skip == 0) {
+        this.prevResults = 0
+      }
+      if (this.skip + this.item_per_page < this.resultsCount) {
+        this.max = false
+      }
+      if (this.skip + this.item_per_page >= this.resultsCount) {
+        this.max = true
+      }
+      this.pageuser
+    },
+    goto() {
+        window.scrollTo(0, top);
+    },
+
   },
   computed: {
     // a computed getter
@@ -89,7 +115,7 @@ export default {
       // `this` points to the component instance
      // return this.user1.slice(this.from,this.to)
       return   this.text ? this.user1.filter((e) =>!e.name.toLowerCase().indexOf(this.text.toLowerCase()) || !String(e.cardNumber).indexOf(this.text.toLowerCase())  || !e.seller.toLowerCase().indexOf(this.text.toLowerCase())  || !e.phone.toLowerCase().indexOf(this.text.toLowerCase()))
-        :this.user1.slice(this.from,this.to)
+      :this.user1.slice(this.skip,this.skip+10)
     }
   },
   setup() {
