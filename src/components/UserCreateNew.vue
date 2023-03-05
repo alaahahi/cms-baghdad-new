@@ -56,6 +56,8 @@
           <option value="زهراء جاسم">زهراء جاسم</option>  
           <option value="ظبيه هاشم">ظبيه هاشم</option>
           <option value="منظر زياد">منظر زياد</option>
+          <option value="ضحى قيس">ضحى قيس</option>
+          <option value="همام سعد فرهود">همام سعد فرهود</option>
 
         </select>
       </div>
