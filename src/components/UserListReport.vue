@@ -46,6 +46,10 @@
           <option value="منظر زياد">منظر زياد</option>
           <option value="ضحى قيس">ضحى قيس</option>
           <option value="همام سعد فرهود">همام سعد فرهود</option>
+
+          <option value="مرح احمد">مرح احمد</option>
+          <option value="زهراء فاروق">زهراء فاروق</option>
+
         </select>
       </div>
   </div>
