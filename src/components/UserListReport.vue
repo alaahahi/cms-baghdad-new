@@ -50,8 +50,8 @@
           <option value="مرح احمد">مرح احمد</option>
           <option value="زهراء فاروق">زهراء فاروق</option>
           <option value="علي كاظم">علي كاظم</option>
-
-
+          <option value="علي السجاد">علي السجاد</option>
+          <option value="فرح صالح">فرح صالح</option>        
         </select>
       </div>
   </div>
