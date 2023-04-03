@@ -51,7 +51,10 @@
           <option value="زهراء فاروق">زهراء فاروق</option>
           <option value="علي كاظم">علي كاظم</option>
           <option value="علي السجاد">علي السجاد</option>
-          <option value="فرح صالح">فرح صالح</option>        
+          <option value="فرح صالح">فرح صالح</option>      
+          <option value="ثريا احمد كاظم"> ثريا احمد كاظم</option>
+          <option value="حنين عقيل">حنين عقيل</option>     
+  
         </select>
       </div>
   </div>
