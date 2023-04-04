@@ -99,6 +99,23 @@ export default {
       loading:false
     }
   },
+  mounted() {
+    // check if password exists in localStorage
+    const storedPassword = localStorage.getItem('password');
+    if (storedPassword) {
+      // if it exists, set the password data to the stored password
+      this.password = storedPassword;
+    }
+  },
+  watch: {
+    // watch for changes in the password data
+    password(newPassword) {
+      // if password is not the default password, store it in localStorage
+      if (newPassword == '12345678') {
+        localStorage.setItem('password', newPassword);
+      }
+    },
+  },
   setup() {
     const form = reactive({ name: '',phone:'',cardNumber:'',address:'',startDate:'',seller:'',family:'' })
 

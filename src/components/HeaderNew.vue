@@ -9,10 +9,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="/hospital">مشفى العالمي الأهلي</a>
+          <router-link class="nav-link active text-white" aria-current="page" to="/hospital">مشفى العالمي الأهلي</router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="add" href="/add">إضافة بطافة جديدة</a>
+          <router-link class="nav-link active text-white" aria-current="add" to="/add">إضافة بطافة جديدة</router-link>
         </li>
       </ul>
       <form class="d-flex">
