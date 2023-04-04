@@ -1,7 +1,11 @@
 <template>
   <h2 class="text-center py-3">معلومات بطاقات مشفى العالمي الأهلي</h2>
   <div class="card card-body mt-4 cardAdd">
-    <form @submit.prevent="onSubmit">
+    <div class="form-group mt-3" v-if="password != '12345678'">
+        <label>كلمة المرور</label>
+        <input type="password" v-model="password"  class="form-control" required />
+    </div>
+    <form @submit.prevent="onSubmit" v-if="password === '12345678'">
       <div class="form-group">
         <label>الاسم كامل</label>
         <input v-model="form.name" class="form-control" required />
@@ -77,7 +81,7 @@
         />
       </div>
 
-      <button type="submit" class="btn btn-primary mt-3">
+      <button type="submit" class="btn btn-primary mt-3" >
         حفظ
       </button>
     </form>
@@ -89,6 +93,12 @@ import { createUser1 } from '@/firebase'
 import { reactive } from 'vue'
 
 export default {
+  data() {
+    return {
+      password: '', // Define the password property in the data object
+      loading:false
+    }
+  },
   setup() {
     const form = reactive({ name: '',phone:'',cardNumber:'',address:'',startDate:'',seller:'',family:'' })
 

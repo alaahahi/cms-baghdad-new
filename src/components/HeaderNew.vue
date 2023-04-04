@@ -11,7 +11,9 @@
         <li class="nav-item">
           <a class="nav-link active text-white" aria-current="page" href="/hospital">مشفى العالمي الأهلي</a>
         </li>
-    
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="add" href="/add">إضافة بطافة جديدة</a>
+        </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search"  placeholder="رقم البطاقة" aria-label="Search">
