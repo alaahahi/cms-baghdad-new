@@ -3,22 +3,20 @@
   <div class="container-fluid">
     <a class="navbar-brand text-white" href="/hospital">CMS
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <div class=" navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <router-link class="nav-link active text-white" aria-current="page" to="/hospital">مشفى العالمي الأهلي</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link active text-white" aria-current="add" to="/add">إضافة بطافة جديدة</router-link>
+          <router-link class="nav-link active text-white" aria-current="add" to="/add">إضافة بطاقة جديدة</router-link>
         </li>
       </ul>
-      <form class="d-flex">
+      <!-- <form class="d-flex">
         <input class="form-control me-2" type="search"  placeholder="رقم البطاقة" aria-label="Search">
         <button class="btn btn-outline-success text-white" type="submit">بحث</button>
-      </form>
+      </form> -->
     </div>
   </div>
 </nav>
