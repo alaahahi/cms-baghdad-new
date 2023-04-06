@@ -8,7 +8,7 @@
     <div class="search">
       <i class="fa fa-search"></i>
       <input type="text"   v-model="text" class="form-control" placeholder="رقم البطاقة">
-      <button class="btn btn-primary">بحث</button>
+      <button class="btn btn-primary" @click="search()">بحث</button>
     </div>
     
   </div>
@@ -117,6 +117,7 @@ export default {
   setup() {
     const user1 = useLoadUser1()
     return { user1, deleteUser1 }
+    
   },
  
 }
