@@ -7,12 +7,12 @@
 
     <div class="search">
       <i class="fa fa-search"></i>
-      <input type="text"  v-model="text" class="form-control" placeholder="رقم البطاقة">
+      <input type="text"   v-model="text" class="form-control" placeholder="رقم البطاقة">
       <button class="btn btn-primary">بحث</button>
     </div>
     
   </div>
-  <h5 class="text-center pt-3" v-if="this.text">عدد النتائج  {{pageuser.length}}</h5>
+  <h5 class="text-center pt-3" v-if="this.text">عدد النتائج  {{user1.length}}</h5>
 
 </div>
 </div>
@@ -32,7 +32,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="{ id, name, phone, cardNumber ,address ,startDate ,seller ,family  } in pageuser" :key="id">
+        <tr v-for="{ id, name, phone, cardNumber ,address ,startDate ,seller ,family  } in user1" :key="id">
           <td scope="col">{{name}}</td>
           <td scope="col">{{phone}}</td>
           <td scope="col"> {{cardNumber}}</td>
@@ -69,6 +69,8 @@
 
 <script>
 import { useLoadUser1, deleteUser1 } from '@/firebase'
+import { searchCollection } from '@/firebase.js';
+
 import paginator from './paginator.vue'
 
 export default {
@@ -81,13 +83,17 @@ export default {
       prevResults: 0,
       nextResults: 10,
       skip: 0,
-
+      v:[],
       from:0,
       to:9,
       text:""
     }
   },
   methods:{
+    async search() {
+    const results = await searchCollection('cardNumber', this.text);
+    this.user1= results;
+  },
     getMoreResults_from_child(v) {
       this.skip = this.skip + v
       if (this.skip != 0) {
@@ -102,21 +108,11 @@ export default {
       if (this.skip + this.item_per_page >= this.resultsCount) {
         this.max = true
       }
-      this.pageuser
     },
     goto() {
         window.scrollTo(0, top);
     },
 
-  },
-  computed: {
-    // a computed getter
-    pageuser() {
-      // `this` points to the component instance
-     // return this.user1.slice(this.from,this.to)
-      return   this.text ? this.user1.filter((e) =>!e.name.toLowerCase().indexOf(this.text.toLowerCase()) || !String(e.cardNumber).indexOf(this.text.toLowerCase())  || !e.seller.toLowerCase().indexOf(this.text.toLowerCase())  || !e.phone.toLowerCase().indexOf(this.text.toLowerCase()))
-      :this.user1.slice(this.skip,this.skip+10)
-    }
   },
   setup() {
     const user1 = useLoadUser1()

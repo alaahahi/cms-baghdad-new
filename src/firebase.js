@@ -18,6 +18,8 @@ const db = firebaseApp.firestore()
 
 const usersCollection = db.collection('users')
 
+const user1Collection = db.collection('user1')
+
 export const createUser = user => {
   return usersCollection.add(user)
 }
@@ -44,7 +46,6 @@ export const useLoadUsers = () => {
   return users
 }
 
-const user1Collection = db.collection('user1')
 
 export const createUser1 = user => {
   return user1Collection.add(user)
@@ -65,9 +66,17 @@ export const deleteUser1 = id => {
 
 export const useLoadUser1 = () => {
   const user1 = ref([])
-  const close = user1Collection.onSnapshot(snapshot => {
+  const close = user1Collection.limit(100).onSnapshot(snapshot => {
     user1.value = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))
   })
   onUnmounted(close)
   return user1
 }
+
+
+export const searchCollection = async (field, query) => {
+  const results = await user1Collection.where(field, '>=', query)
+                                       .where(field, '<=', query + '\uf8ff')
+                                       .get();
+  return results.docs.map(doc => doc.data());
+};
