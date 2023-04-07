@@ -68,7 +68,7 @@
           <option value="علي السجاد">علي السجاد</option>
           <option value="فرح صالح">فرح صالح</option>     
           <option value="ثريا احمد كاظم"> ثريا احمد كاظم</option>
-          <option value="حنين عقيل">حنين عقيل</option>     
+          <option value="حنين عقيل">حنين عقيل</option> 
 
         </select>
       </div>
@@ -81,8 +81,8 @@
         />
       </div>
 
-      <button type="submit" class="btn btn-primary mt-3" >
-        حفظ
+      <button type="submit" class="btn btn-primary mt-3" :disabled="isLoading">
+        {{ isLoading ? 'جاري الحفظ...' : 'حفظ' }}
       </button>
     </form>
   </div>
@@ -90,13 +90,14 @@
 
 <script>
 import { createUser1 } from '@/firebase'
-import { reactive } from 'vue'
 
 export default {
   data() {
     return {
       password: '', // Define the password property in the data object
-      loading:false
+      form: { name: '', phone: '', cardNumber: '', address: '', startDate: '', seller: '', family: '' },
+      isLoading: false
+
     }
   },
   mounted() {
@@ -116,21 +117,20 @@ export default {
       }
     },
   },
-  setup() {
-    const form = reactive({ name: '',phone:'',cardNumber:'',address:'',startDate:'',seller:'',family:'' })
-
-    const onSubmit = async () => {
-      await createUser1({ ...form })
-      form.name = ''
-      form.cardNumber = ''
-      form.phone = ''
-      form.address = ''
-      form.startDate = ''
-      form.seller = ''
-      form.family = ''
+  methods: {
+    async onSubmit() {
+      this.isLoading = true;
+      await createUser1({ ...this.form });
+      this.form.name = '';
+      this.form.cardNumber = '';
+      this.form.phone = '';
+      this.form.address = '';
+      this.form.startDate = '';
+      this.form.seller = '';
+      this.form.family = '';
+      this.isLoading = false;
     }
-
-    return { form, onSubmit }
   }
+ 
 }
 </script>
