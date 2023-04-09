@@ -54,7 +54,7 @@
           <option value="فرح صالح">فرح صالح</option>      
           <option value="ثريا احمد كاظم"> ثريا احمد كاظم</option>
           <option value="حنين عقيل">حنين عقيل</option>     
-  
+          <option value="هدف مباشر">هدف مباشر</option> 
         </select>
       </div>
   </div>
