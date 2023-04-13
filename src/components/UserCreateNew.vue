@@ -70,6 +70,11 @@
           <option value="ثريا احمد كاظم"> ثريا احمد كاظم</option>
           <option value="حنين عقيل">حنين عقيل</option> 
           <option value="هدف مباشر">هدف مباشر</option> 
+          <option value="احمد علي">احمد علي</option> 
+          <option value="منعم وسام منعم">منعم وسام منعم</option> 
+          <option value="نزار جاسم خلف">نزار جاسم خلف</option> 
+          <option value="مرتضى حسين">مرتضى حسين</option> 
+          <option value="ساره احمد">ساره احمد</option> 
         </select>
       </div>
       <div class="form-group mt-3">
