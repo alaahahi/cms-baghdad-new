@@ -62,7 +62,8 @@
           <option value="مرتضى حسين">مرتضى حسين</option> 
           <option value="ساره احمد">ساره احمد</option> 
        
-
+          <option value="نصير المشهداني">نصير المشهداني</option>
+          <option value="مصطفى وليد">مصطفى وليد</option> 
           
           
         </select>
