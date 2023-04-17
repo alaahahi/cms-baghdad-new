@@ -72,6 +72,14 @@ export const useLoadUser1 = () => {
   onUnmounted(close)
   return user1
 }
+export const useLoadUserAll = () => {
+  const user1 = ref([])
+  const close = user1Collection.onSnapshot(snapshot => {
+    user1.value = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }))
+  })
+  onUnmounted(close)
+  return user1
+}
 
 
 export const searchCollection = async (field, query) => {

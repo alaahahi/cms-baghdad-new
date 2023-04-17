@@ -128,7 +128,7 @@
 </template>
 
 <script>
-import { useLoadUser1, deleteUser1 } from '@/firebase'
+import { useLoadUserAll, deleteUser1 } from '@/firebase'
 import html2pdf from "html2pdf.js";
 
 export default {
@@ -162,7 +162,7 @@ export default {
     }
   },
   setup() {
-    const user1 = useLoadUser1()
+    const user1 = useLoadUserAll()
     return { user1, deleteUser1 }
   },
  
