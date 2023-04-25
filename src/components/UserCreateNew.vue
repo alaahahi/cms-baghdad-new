@@ -79,7 +79,12 @@
           <option value="مصطفى وليد">مصطفى وليد</option> 
           <option value="حسين اسعد">حسين اسعد</option>
           <option value="الاء عبد الرسول">الاء عبد الرسول</option>
-          <option value="ايمن عبد المهدي">ايمن عبد المهدي</option>         
+          <option value="ايمن عبد المهدي">ايمن عبد المهدي</option>
+          <option value="بنين">بنين</option>
+          <option value="هدى جمال">هدى جمال</option>
+          <option value="رسل مهدي">رسل مهدي</option>
+          <option value="انمار علي">انمار علي</option>
+          <option value="محمد الخزعلي">محمد الخزعلي</option>
         </select>
       </div>
       <div class="form-group mt-3">
