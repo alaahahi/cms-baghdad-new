@@ -5,12 +5,18 @@ import Report from '@/views/Report.vue'
 import Edit from '@/views/Edit.vue'
 import Add from '@/views/Add.vue'
 import HomeNew from '@/views/HomeNew.vue'
+import Red from '@/views/Red.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/Red-Crescent',
+    name: 'Red',
+    component: Red
   },
   {
     path: '/hospital',
