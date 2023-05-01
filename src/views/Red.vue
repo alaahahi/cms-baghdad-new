@@ -1,6 +1,8 @@
 <template>
+  
     <div>
       <h2 class="text-center">  البطاقة الصحية العائلية لمستشفى الهلال الأحمر </h2>
+      <img src="../../public/img/card.png" alt="image">
       <div>
         <p>
     
@@ -11,8 +13,6 @@
     </template>
     
     <script>
-    
-    
     export default {
       name: 'Home',
     }
