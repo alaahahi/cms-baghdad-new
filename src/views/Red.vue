@@ -8,7 +8,7 @@
       <header class="header_section">
         <div class="container">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="#" style="background: #fff;border-radius: 20px;">
               <img src="../../public/img/LOGO-card.png" width="200px" alt="image">
  
             </a>
@@ -59,7 +59,7 @@
                       </h1>
                       <p>
                         البطاقة الصحية العائلية لمستشفى الهلال الأحمر
-
+                        معاينات مجانية مفتوحة وغير محددة
                       </p>
                       <div class="btn-box">
                         <a href="" class="btn1">
@@ -80,7 +80,8 @@
                         أول بطاقة صحية
                       </h1>
                       <p>
-                        نقلة نوعية في عالم بطاقات التأمين الصحي
+                        خصومات تتراوح ما بين %10 إلى %20
+                       على جميع أقسام المستشفى 
                       </p>
                       <div class="btn-box">
                         <a href="" class="btn1">
@@ -147,11 +148,10 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    أطفال
+                    العيادة الباطنية
                   </h5>
                   <p>
-                    يقوم طبيب الأطفال بتقديم العناية الصحية الشاملة للأطفال، بما في ذلك الفحوصات الروتينية، والتشخيص والعلاج للحالات المرضية والحادثية.
-                  </p>
+                    تشخيص وعلاج الأمراض التي تؤثر على الأعضاء الداخلية في الجسم، مثل القلب والكبد والكلى والجهاز الهضمي والغدد الصماء والدم                 </p>
                 </div>
               </div>
             </div>
@@ -162,10 +162,11 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    نسائية
+                    العيادة العظمية
                   </h5>
                   <p>
-                    شخيص وعلاج الأمراض التي تؤثر على صحة المرأة، ويشمل ذلك الفحوصات الروتينية والتشخيص والعلاج للحالات المرضية والجراحية الضرورية
+                    تشخيص وعلاج الأمراض والإصابات التي تؤثر على الجهاز العظمي والعضلي
+                  وتشخيص وعلاج الكسور والإصابات العظمية والعضلية والأربطة والأوتار
                   </p>
                 </div>
               </div>
@@ -177,10 +178,13 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    داخلية
+                    العيادة الجلدية
                   </h5>
                   <p>
-                    تشخيص وعلاج الأمراض التي تؤثر على الأعضاء الداخلية في الجسم،القلب والرئتين والكبد والكلى والجهاز الهضمي والدم، 
+                    تشخيص وعلاج الأمراض التي تؤثر على الجلد والشعر والأظافر. 
+                  و
+                  تشخيص وعلاج الحساسية والإكزيما والصدفية وحب الشباب والأكزيما الدهنية والجلد الجاف والتهاب الجلد والقروح الجلدية والورم الجلدي.
+
                   </p>
                 </div>
               </div>
@@ -192,7 +196,58 @@
                 </div>
                 <div class="detail-box">
                   <h5>
-                    قلبية
+                    العيادة العينية
+                  </h5>
+                  <p>
+                    تشخيص وعلاج الأمراض التي تؤثر على العين والرؤية
+                  و
+                  شخيص وعلاج مشاكل الرؤية، مثل القصر النظر والطول النظر والحول والزيادة الزاوية بين العينين
+                </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="../../public/img/s1.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    عيادة الجراحة العامة
+                  </h5>
+                  <p>
+                    تشخيص وعلاج مجموعة متنوعة من الأمراض والإصابات التي تحتاج إلى علاج جراحي
+                  و
+                  علاج الجروح والكسور والإصابات الحادة التي تتطلب إجراء عملية جراحية
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="../../public/img/s3.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    عيادة الأنف والأذن والحنجرة
+                  </h5>
+                  <p>
+                    علاج مشاكل الأنف والجيوب الأنفية، مثل الاحتقان والتهاب الجيوب الأنفية والحساسية
+                    و
+                    علاج مشاكل الأذن، مثل الالتهابات الأذن وفقدان السمع والدوخة والزناد
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="../../public/img/s4.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    العيادة القلبية
                   </h5>
                   <p>
                     تشخيص وعلاج أمراض القلب والأوعية الدموية. تشخيص حالات الأمراض التي تؤثر على القلب والأوعية الدموية
@@ -200,11 +255,35 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="btn-box">
-            <a href="">
-              المزيد
-            </a>
+            <div class="col-md-3">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="../../public/img/s4.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    العيادة النسائية
+                  </h5>
+                  <p>
+                    شخيص وعلاج الأمراض التي تؤثر على صحة المرأة، ويشمل ذلك الفحوصات الروتينية والتشخيص والعلاج للحالات المرضية والجراحية الضرورية
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="box ">
+                <div class="img-box">
+                  <img src="../../public/img/s4.png" alt="">
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    عيادة الأطفال
+                  </h5>
+                  <p>
+                    تقديم العناية الصحية الشاملة للأطفال، بما في ذلك الفحوصات الروتينية، والتشخيص والعلاج للحالات المرضية والحادثية                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -233,9 +312,27 @@
     
           هي بطاقة يحق لحاملها الاستفادة من المعاينات ( الكشفيات ) المجانية لتسعة عيادات مختلفة مذكورة في الكتالوج لمدة سنة, له ولكافة أفراد عائلته من الدرجة الأولى, حيث عدد الزيارات غير محدود بالإضافة إلى خصومات تتراوح ما بين 10% إلى 20%  على جميع أقسام المستشفى
               </p>
-              <a href="">
-                المزيد
-              </a>
+
+            </div>
+            <div class="detail-box">
+              <div class="heading_container py-4">
+                <h2>
+                  مستشفى الهلال الأحمر
+                </h2>
+              </div>
+              <p>
+    
+               تأسست مستشفى الهلال الأحمر العراقي للجراحة العامة عام 1991
+              هي تحوي على  70  سرير أو غرفة من الناحية الفندقية غرف جيدة
+              ًجدا والمستشفى تحتوي على  4  صالات والصالات نموذية ومثالية
+              في حجمها ومؤثثة بالأجهزة الطبية والجراحية المتطورة ونواكب
+              التطور في كل وقت
+              المستشفى في توسع دائم من ناحية تقديم الخدمات الطبية
+              ً الجراحة المتخصصة ,إنشاء مركز لعلاج تشوهات العظام وخصوصا
+              الأطفال ومركز تخصصي لجراحة القلب ومركز لمعالجة الأورام ولدينا
+              دراسات بهذا الخصوص.
+              </p>
+ 
             </div>
           </div>
         </div>
@@ -253,35 +350,23 @@
            الأطباء
           </h2>
           <p class="col-md-10 mx-auto px-0">
-            "يمكن الاستفادة من الاستشارة مع أفضل الأطباء في مجال الصحة للوصول إلى خدمة صحية متفوقة ومتميزة
+             يمكن الاستفادة من الاستشارة مع أفضل الأطباء في مجال الصحة للوصول إلى خدمة صحية متفوقة ومتميزة
           </p>
         </div>
         <div class="row">
           <div class="col-sm-6 col-lg-4 mx-auto">
             <div class="box">
               <div class="img-box">
-                <img src="../../public/img/d1.jpg" alt="">
+                <img src="../../public/img/d1.jpg" alt="" style="  filter: blur(8px);  -webkit-filter: blur(8px);">
               </div>
               <div class="detail-box">
-                <div class="social_box">
-                  <a href="">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                </div>
                 <h5>
-                  Elina Josh
+                  الدكتور فلاح حسن خيوكة
                 </h5>
                 <h6 class="">
-                  Doctor
+                  دكتوراه جراحة العظام والكسور
+                  والعمود الفقري والمفاصل
+                  عضو الكلية الملكية البريطانية/ آيرلندا
                 </h6>
               </div>
             </div>
@@ -289,28 +374,14 @@
           <div class="col-sm-6 col-lg-4 mx-auto">
             <div class="box">
               <div class="img-box">
-                <img src="../../public/img/d2.jpg" alt="">
+                <img src="../../public/img/d3.jpg" alt="" style="  filter: blur(8px);  -webkit-filter: blur(8px);">
               </div>
               <div class="detail-box">
-                <div class="social_box">
-                  <a href="">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                </div>
                 <h5>
-                  Adam View
+                  الدكتورة آلاء ضياء الدين محسن
                 </h5>
                 <h6 class="">
-                  Doctor
+                  طبيبة اختصاص باطنية صدرية قلبية
                 </h6>
               </div>
             </div>
@@ -318,41 +389,154 @@
           <div class="col-sm-6 col-lg-4 mx-auto">
             <div class="box">
               <div class="img-box">
-                <img src="../../public/img/d3.jpg" alt="">
+                <img src="../../public/img/d1.jpg" alt="" style="  filter: blur(8px);  -webkit-filter: blur(8px);">
               </div>
               <div class="detail-box">
-                <div class="social_box">
-                  <a href="">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
-                  </a>
-                  <a href="">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                </div>
                 <h5>
-                  Mia Mike
+                  الدكتور لؤي مناف الأمين
                 </h5>
                 <h6 class="">
-                  Doctor
+                  اختصاص طب وجراحة العيون
+                  شهادات أمريكية وخبرات كندية
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mx-auto">
+            <div class="box">
+              <div class="img-box">
+                <img src="../../public/img/d2.jpg" alt="" style="  filter: blur(8px);  -webkit-filter: blur(8px);">
+              </div>
+              <div class="detail-box">
+                <h5>
+                    الدكتور براء حميد السعدون 
+                </h5>
+                <h6 class="">
+                  باطنية جلدية
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mx-auto">
+            <div class="box">
+              <div class="img-box">
+                <img src="../../public/img/d1.jpg" alt="" style="  filter: blur(8px);  -webkit-filter: blur(8px);">
+              </div>
+              <div class="detail-box">
+                <h5>
+                الدكتور محمد ثابت
+                </h5>
+                <h6 class="">
+                  جراحة الأنف والأذن والحنجرة والرأس والرقبة والغدة الدرقية
+                  وجراحة الأنف والجيوب الأنفية بالناظور ومعالجة الحساسية
+                  تقويم الشفه واللهاة الولادي
+                  إجراء عمليات استئصال اللوزتين ومعالجة الشخير بجهاز البلازما
+                  الجراحي المتطور
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mx-auto">
+            <div class="box">
+              <div class="img-box">
+                <img src="../../public/img/d2.jpg" alt="" style="  filter: blur(8px);  -webkit-filter: blur(8px);">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  الدكتور زياد خالص التميمي
+                </h5>
+                <h6 class="">
+                  شهادة البورد (الدكتوراه) في
+                  الجراحة العامة والجراحة المنظارية
+                  زميل المجلس العراقي
+                  للاختصاصات الطبية
+                  بكالوريوس طب وجراحة عامة
+                  (جامعة بغداد)
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mx-auto">
+            <div class="box">
+              <div class="img-box">
+                <img src="../../public/img/d3.jpg" alt="" style="  filter: blur(8px);  -webkit-filter: blur(8px);">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  الدكتورة هيام جاسم
+                </h5>
+                <h6 class="">
+                  اختصاص بورد نسائية وتوليد
+                  زميلة الكلية البريطانية
+                  للنسائية والتوليد
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mx-auto">
+            <div class="box">
+              <div class="img-box">
+                <img src="../../public/img/d2.jpg" alt="" style="  filter: blur(8px);  -webkit-filter: blur(8px);">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  الدكتور عمر أحمد ذياب
+                </h5>
+                <h6 class="">
+                  ختصاص بورد (دكتوراه)
+                  في جراحة القلب والصدر والأوعية الدموية
+                  أكياس الرئتين المائية- تشوهات القلب
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mx-auto">
+            <div class="box">
+              <div class="img-box">
+                <img src="../../public/img/d3.jpg" alt="" style="  filter: blur(8px);  -webkit-filter: blur(8px);">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  الدكتورة بان حافظ جواد 
+                </h5>
+                <h6 class="">
+                  طب الأطفال وحديثي الولادة
                 </h6>
               </div>
             </div>
           </div>
         </div>
-        <div class="btn-box">
-          <a href="">
-            عرض الجميع
-          </a>
-        </div>
+  
       </div>
       </section>
 
+      <section>
+        <h3 class="text-center py-5">
+          تمنح البطاقة الخصومات التالية على جميع أقسام المستشفى:
+        </h3>
+        <div class="container py-4 text-center">
+        <div class="row pb-5">
+          <div class="col-md-4">
+            <img src="../../public/img/11.jpg" alt="" >
+          </div>
+          <div class="col-md-4">
+            <img src="../../public/img/22.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="../../public/img/33.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="../../public/img/44.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="../../public/img/55.jpg" alt="">
+          </div>
+          <div class="col-md-4">
+            <img src="../../public/img/66.jpg" alt="">
+          </div>
+        </div>
+        </div>
+      </section>
       <!-- end doctor section -->
 
       <!-- contact section 
