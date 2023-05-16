@@ -11,7 +11,7 @@
         <li class="nav-item">
           <a class="nav-link active text-white" aria-current="page" href="#">مشفى البشارة الأهلي</a>
         </li>
-    
+      
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="رقم البطاقة" aria-label="Search">
